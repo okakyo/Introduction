@@ -1,8 +1,10 @@
 
 - ## Profile
-    - ### アカウント名：おかきょー
-         - #### Twitter: [@31415O_Kyo](https://twitter.com/31415O_Kyo), 
-         - #### GitHub: [okakyo](https://github.com/okakyo)
+    <img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px height=100px style="float:left;">
+    <h3> アカウント名：おかきょー</h3>
+        <h4>Twitter: <a href="https://twitter.com/31415O_Kyo">@31415O_Kyo</a></h4> 
+        <h4>GitHub: <a href="https://github.com/okakyo">okakyo</a></h4>
+        
     - ### 同志社大学 理工学部 機械システム学科所属
     - ### 使用したプログラミング言語
         - Python, C/C++, Java
