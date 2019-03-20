@@ -1,6 +1,7 @@
 
 - ## Profile
-    <img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px; height=100px;>
+    ![アカウント画像]("https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg")
+   
 
     - ### アカウント名：おかきょー
          - #### Twitter: [@31415O_Kyo](https://twitter.com/31415O_Kyo), 
