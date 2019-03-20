@@ -1,7 +1,7 @@
 
 - ## Profile
     - ### アカウント名：おかきょー
-        <img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px; height:100px;>
+        <img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px; height=100px;>
 
          - #### Twitter: [@31415O_Kyo](https://twitter.com/31415O_Kyo), 
          - #### GitHub: [okakyo](https://github.com/okakyo)
