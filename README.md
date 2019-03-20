@@ -1,11 +1,8 @@
 
 - ## Profile
-
-<img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px; height=100px;>
+    <img src="https://pbs.twimg.com/profile_images/1084347863428083712/ER7w9P96_400x400.jpg" width=100px; height=100px;>
 
     - ### アカウント名：おかきょー
-        
-
          - #### Twitter: [@31415O_Kyo](https://twitter.com/31415O_Kyo), 
          - #### GitHub: [okakyo](https://github.com/okakyo)
     - ### 同志社大学 理工学部 機械システム学科所属
