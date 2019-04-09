@@ -1,1 +1,1 @@
-![](http://i.imgur.com/Jjwsc.jpg "サンプル")
+![例](img/ex.png "サンプル")
