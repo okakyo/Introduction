@@ -1,1 +1,1 @@
-![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg "サンプル")
+![](http://i.imgur.com/Jjwsc.jpg "サンプル")
