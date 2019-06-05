@@ -10,38 +10,94 @@ html(lang="en")
         title おかきょーのポートフォリオ
     body
         header
-            nav
-                .nav-wrapper.light-blue
-                    a.brand-logo.center Portfolio
+            nav.nav-extended
+                .nav-wrapper.light-blue.darken-2
+                    a.brand-logo.center OkaKyo’s Portfolio
+                .nav-content.light-blue
+                    .container
+                        ul.tabs.tabs-transparent
+                            li.tab
+                                a(href="#about") About
+                            li.tab
+                                a(href="#Skills") Skills
+                            li.tab
+                                a(href="#Works") Works
         main.container
-            .row.card
-                h2(style="margin-top:0px").center About
-                .card.horizontal(style="margin:5%;")
-                    .row
-                        .card-image.col.m5.hide-on-small-only
-                            img(src="https://qiita-image-store.s3.amazonaws.com/0/271708/profile-images/1554784071" style="width:100%;height:100%;margin-top:10px") 
-                        .card-stack.col.m6.s12
-                            .card-title
-                                h3.center-align おかきょー
+            .card.grey.lighten-4
+                .row
+                    .col.m4.s12
+                        .card
+                            .card-image
+                    .col.m1
+                    .col.m6.s12
+                        .card
+                            .center.z-depth-1.light-blue.dark-2
+                                h3.white-text(style="padding:10px") About
                             .card-content
+                                .row
+                                    .col.s2
+                                    .col.s8
+                                        p.card-title Name：
+                                            b 岡　恭平
+                                        hr
+                                        p Twitter:
+                                            a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
+                                        p GitHub:
+                                            a(href="https://github.com/okakyo") @okakyo
+                                        p Qiita:
+                                            a(href="https://qiita.com/0622okakyo") @0622okakyo
+                                        p Mail:0622okakyo@gmail.com
+                .row
+                    .col.m1
+                    .col.s12.m10
+                        .card
+                            .center.z-depth-1.light-blue.dark-2
+                                h3.white-text(style="padding:10px") Skill
+                            .card-content
+                                .row
+                                    .card.col.s4
+                                        h5 Python
+                                        hr
+                                        p 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
+                                    .card.col.s4
+                                        h5 JavaScript
+                                        hr
+                                        p Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行った。 
+                                    .card.col.s4
+                                        h5 TypeScript
+                                        hr
+                                        p Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。
+
+                                    .card.col.s4
+                                        h5 Go
+                                        hr
+                                    .card.col.s4
+                                        h5 Ruby
+                                        hr
+                                    .card.col.s4
+                                        h5 C/C++
+                                        hr
+                                    .card.col.s4
+                                        h5 Java
+                                        hr
+                .row
+                    .col.m1
+                    .col.s12.m10
+                        .card
+                            .center.z-depth-1.light-blue.dark-2
+                                h3.white-text(style="padding:10px") Works
+                            .card-content
+                                .row
+                                    .card.col.s4
+                                        h5 飲み会提案ボット
+                                    .card.col.s4
+                                        h5 危険地帯アラート
+                                    .card.col.s4
+                                        h5 Google Apps Script
+                                    
                                 
-                                p Twitter:
-                                    a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
-                                p GitHub:
-                                    a(href="https://github.com/okakyo") @okakyo
 
-                                p Qiita:
-                                    a(href="https://qiita.com/0622okakyo") @0622okakyo
-                                p Mail:0622okakyo@gmail.com
-                .card
-                    h2.center Skill
-                        p Python
-                        p JavaScript
-                        p TypeScript
-                        p Java
-                        p C/C++
 
-                    
-                h2.center Works 
+                 
 
 
