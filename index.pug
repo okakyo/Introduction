@@ -7,37 +7,41 @@ html(lang="en")
         link(rel="stylesheet", href="materialize.min.css")
         link(rel="stylesheet", href="style.css")
         script(src="materialize.min.js")
-        title Introduction
+        title おかきょーのポートフォリオ
     body
-        .container
-            h1 Portfolio
-            img.materialboxed(width="100%" src="img/cruise-3991937_1920.jpg")
-            .row
-                h2 About
-                .card.horizontal
-                    .card-image
-                        img(src="https://qiita-image-store.s3.amazonaws.com/0/271708/profile-images/1554784071" style="width:300px;height:300px;") 
-                    .card-stack
-                        .card-title
-                            h3.center-align おかきょー
-                        .card-content
-                            p 同志社大学　理工学部所属
-                            p Twitter:
-                                a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
-                            p GitHub:
-                                a(href="https://github.com/okakyo") @okakyo
+        header
+            nav
+                .nav-wrapper.light-blue
+                    a.brand-logo.center Portfolio
+        main.container
+            .row.card
+                h2(style="margin-top:0px").center About
+                .card.horizontal(style="margin:5%;")
+                    .row
+                        .card-image.col.m5.hide-on-small-only
+                            img(src="https://qiita-image-store.s3.amazonaws.com/0/271708/profile-images/1554784071" style="width:100%;height:100%;margin-top:10px") 
+                        .card-stack.col.m6.s12
+                            .card-title
+                                h3.center-align おかきょー
+                            .card-content
+                                
+                                p Twitter:
+                                    a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
+                                p GitHub:
+                                    a(href="https://github.com/okakyo") @okakyo
 
-                            p Qiita:
-                                a(href="https://qiita.com/0622okakyo") @0622okakyo
-                            p Mail:0622okakyo@gmail.com
-                h2 Skill
-                    p Python
-                    p JavaScript
-                    p TypeScript
-                    p Java
-                    p C/C++
+                                p Qiita:
+                                    a(href="https://qiita.com/0622okakyo") @0622okakyo
+                                p Mail:0622okakyo@gmail.com
+                .card
+                    h2.center Skill
+                        p Python
+                        p JavaScript
+                        p TypeScript
+                        p Java
+                        p C/C++
 
                     
-                h2 Works 
+                h2.center Works 
 
 
