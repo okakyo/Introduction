@@ -3,3 +3,7 @@
 p {
     font-size:20px;
 }
+
+p.detail {
+    font-size: 15px;
+}

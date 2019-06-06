@@ -6,6 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="materialize.min.css")
         link(rel="stylesheet", href="style.css")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         script(src="materialize.min.js")
         title おかきょーのポートフォリオ
     body.yellow.lighten-5
@@ -27,7 +28,7 @@ html(lang="en")
                 .row
                     .col.s1
                     .col.s6
-                        .card
+                        .card.yellow.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") About
                             .card-content
@@ -45,7 +46,7 @@ html(lang="en")
                                             a(href="https://qiita.com/0622okakyo") @0622okakyo
                                         p Mail:0622okakyo@gmail.com
                     .col.s4
-                        .card
+                        .card.yellow.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Experience
                             .card-content
@@ -59,46 +60,44 @@ html(lang="en")
                                 h3.white-text(style="padding:10px") Skill
                             .card-content
                                 .row
-                                    .card.col.s4
-                                        .card-image
+                                    .card.col.s4.yellow.lighten-5
+                                        .card-image.white(style="border:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
                                         .card-content
-                                            h5 Python
+                                            span.card-title.activator.grey-text.text-darken-4 Python 
+                                                i.material-icons.right more_vert
                                             hr
-                                        p 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
-                                    .card.col.s4
-                                        .card-image
+                                        .card-reveal
+                                            span.card-title.grey-text.text-darken-4 Python
+                                                i(class="material-icons right") close
+                                            hr
+                                            p.detail 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
+                                    .card.col.s4.yellow.lighten-5
+                                        .card-image.white
                                             img(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
                                         .card-content
-                                            h5 JS,TS
+                                            span.card-title.activator.grey-text.text-darken-4 JS
+                                                i.material-icons.right more_vert
                                             hr
-
-                                            p Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
-                                   
-                                    .card.col.s4
-                                        .card-image
-                                            img(src="https://img.icons8.com/color/500/000000/go.png" style="width:100%;")
-                                        .card-content
-                                            h5 Go
+                                        .card-reveal
+                                            span.card-title.grey-text.text-darken-4 JavaScript
+                                        
+                                                i(class="material-icons right") close
                                             hr
-                                    .card.col.s4
-                                        .card-image
-                                            img(src="https://img.icons8.com/color/500/000000/ruby-programming-language.png",style="width:100%;")
-                                        .card-content
-                                            h5 Ruby
-                                            hr
-                                    .card.col.s4
-                                        .card-image
+                                            p.detail Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
+                                    .card.col.s4.yellow.lighten-5
+                                        .card-image.white
                                             img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
                                         .card-content
-                                            h5 C/C++
+                                            span.card-title.activator.grey-text.text-darken-4 C/C++
+                                                i.material-icons.right more_vert
                                             hr
-                                    .card.col.s4
-                                        .card-image
-                                            img(src="https://img.icons8.com/color/500/000000/java-coffee-cup-logo.png" style="width:100%;")
-                                        .card-content
-                                            h5 Java
+                                        .card-reveal
+                                            span.card-title.grey-text.text-darken-4 C/C++
+                                                i(class="material-icons right") close
                                             hr
+                                            p.detail                                             
+                                    
                 .row
                     .col.m1
                     .col.s12.m10
@@ -107,11 +106,11 @@ html(lang="en")
                                 h3.white-text(style="padding:10px") Works
                             .card-content
                                 .row
-                                    .card.col.s4
+                                    .card.col.s4.yellow.lighten-5
                                         h5 飲み会提案ボット
-                                    .card.col.s4
+                                    .card.col.s4.yellow.lighten-5
                                         h5 危険地帯アラート
-                                    .card.col.s4
+                                    .card.col.s4.yellow.lighten-5
                                         h5 Google Apps Script
                                     
                                 
