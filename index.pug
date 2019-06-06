@@ -8,7 +8,7 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
         script(src="materialize.min.js")
         title おかきょーのポートフォリオ
-    body
+    body.yellow.lighten-5
         header
             nav.nav-extended
                 .nav-wrapper.light-blue.darken-2
@@ -25,20 +25,17 @@ html(lang="en")
         main.container
             .card.grey.lighten-4
                 .row
-                    .col.m4.s12
+                    .col.s1
+                    .col.s6
                         .card
-                            .card-image
-                    .col.m1
-                    .col.m6.s12
-                        .card
-                            .center.z-depth-1.light-blue.dark-2
+                            .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") About
                             .card-content
-                                .row
-                                    .col.s2
-                                    .col.s8
+                                .row(style="padding-left:15px;")
+                                    .col.s1
+                                    .col.s11
                                         p.card-title Name：
-                                            b 岡　恭平
+                                            b 岡　恭平 (Oka Kyohei)
                                         hr
                                         p Twitter:
                                             a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
@@ -47,44 +44,66 @@ html(lang="en")
                                         p Qiita:
                                             a(href="https://qiita.com/0622okakyo") @0622okakyo
                                         p Mail:0622okakyo@gmail.com
+                    .col.s4
+                        .card
+                            .center.z-depth-1.light-blue.accent-2
+                                h3.white-text(style="padding:10px") Experience
+                            .card-content
+
+                            
                 .row
                     .col.m1
                     .col.s12.m10
                         .card
-                            .center.z-depth-1.light-blue.dark-2
+                            .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Skill
                             .card-content
                                 .row
                                     .card.col.s4
-                                        h5 Python
-                                        hr
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
+                                        .card-content
+                                            h5 Python
+                                            hr
                                         p 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
                                     .card.col.s4
-                                        h5 JavaScript
-                                        hr
-                                        p Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行った。 
-                                    .card.col.s4
-                                        h5 TypeScript
-                                        hr
-                                        p Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
+                                        .card-content
+                                            h5 JS,TS
+                                            hr
 
+                                            p Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
+                                   
                                     .card.col.s4
-                                        h5 Go
-                                        hr
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/go.png" style="width:100%;")
+                                        .card-content
+                                            h5 Go
+                                            hr
                                     .card.col.s4
-                                        h5 Ruby
-                                        hr
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/ruby-programming-language.png",style="width:100%;")
+                                        .card-content
+                                            h5 Ruby
+                                            hr
                                     .card.col.s4
-                                        h5 C/C++
-                                        hr
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                        .card-content
+                                            h5 C/C++
+                                            hr
                                     .card.col.s4
-                                        h5 Java
-                                        hr
+                                        .card-image
+                                            img(src="https://img.icons8.com/color/500/000000/java-coffee-cup-logo.png" style="width:100%;")
+                                        .card-content
+                                            h5 Java
+                                            hr
                 .row
                     .col.m1
                     .col.s12.m10
                         .card
-                            .center.z-depth-1.light-blue.dark-2
+                            .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Works
                             .card-content
                                 .row
