@@ -8,110 +8,113 @@ html(lang="en")
         link(rel="stylesheet", href="style.css")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         script(src="materialize.min.js")
+        script( src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=", crossorigin="anonymous")
+        
         title おかきょーのポートフォリオ
-    body.yellow.lighten-5
+    body.grey.lighten-4
         header
             nav.nav-extended
                 .nav-wrapper.light-blue.darken-2
                     a.brand-logo.center OkaKyo’s Portfolio
                 .nav-content.light-blue
                     .container
-                        ul.tabs.tabs-transparent
-                            li.tab
-                                a(href="#about") About
-                            li.tab
-                                a(href="#Skills") Skills
-                            li.tab
-                                a(href="#Works") Works
+                        ul.tabs.tabs-transparent.tabs-fixed-width 
+                            li.tab.col.s3
+                                a.active(href="#about") About
+                            li.tab.col.s3
+                                a.active(href="#about") Career
+                            li.tab.col.s3
+                                a(href="#skills") Skills
+                            li.tab.col.s3
+                                a(href="#works") Works
         main.container
-            .card.grey.lighten-4
-                .row
+            .card
+                .row#about
                     .col.s1
                     .col.s6
-                        .card.yellow.lighten-5
+                        .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") About
                             .card-content
                                 .row(style="padding-left:15px;")
-                                    .col.s1
-                                    .col.s11
-                                        p.card-title Name：
-                                            b 岡　恭平 (Oka Kyohei)
-                                        hr
-                                        p Twitter:
-                                            a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
-                                        p GitHub:
-                                            a(href="https://github.com/okakyo") @okakyo
-                                        p Qiita:
-                                            a(href="https://qiita.com/0622okakyo") @0622okakyo
-                                        p Mail:0622okakyo@gmail.com
+                                    .col.s12
+                                        .card(style="padding:10px;")
+                                            p.card-title Name：
+                                                b 岡　恭平 (Oka Kyohei)
+                                            hr
+                                            p Twitter:
+                                                a(href="https://twitter.com/31415O_Kyo") @31415O_Kyo
+                                            p GitHub:
+                                                a(href="https://github.com/okakyo") @okakyo
+                                            p Qiita:
+                                                a(href="https://qiita.com/0622okakyo") @0622okakyo
+                                            p Mail:0622okakyo@gmail.com
                     .col.s4
-                        .card.yellow.lighten-5
+                        .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
-                                h3.white-text(style="padding:10px") Experience
+                                h3.white-text(style="padding:10px") Career
                             .card-content
-
-                            
-                .row
+                .row#skills
                     .col.m1
                     .col.s12.m10
-                        .card
+                        .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Skill
                             .card-content
                                 .row
-                                    .card.col.s4.yellow.lighten-5
-                                        .card-image.white(style="border:groove;")
+                                    .card.col.s4
+                                        .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 Python 
-                                                i.material-icons.right more_vert
+                                                i.material-icons.right message
                                             hr
-                                        .card-reveal
+                                        .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 Python
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
-                                    .card.col.s4.yellow.lighten-5
-                                        .card-image.white
+                                    .card.col.s4
+                                        .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 JS
-                                                i.material-icons.right more_vert
+                                                i.material-icons.right message
                                             hr
-                                        .card-reveal
+                                        .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 JavaScript
                                         
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
-                                    .card.col.s4.yellow.lighten-5
-                                        .card-image.white
+                                    .card.col.s4
+                                        .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 C/C++
-                                                i.material-icons.right more_vert
+                                                i.material-icons.right message
                                             hr
-                                        .card-reveal
+                                        .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 C/C++
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail                                             
                                     
-                .row
+                .row#works
                     .col.m1
                     .col.s12.m10
-                        .card
+                        .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Works
                             .card-content
                                 .row
-                                    .card.col.s4.yellow.lighten-5
+                                    .card.col.s4
                                         h5 飲み会提案ボット
-                                    .card.col.s4.yellow.lighten-5
+                                    .card.col.s4
                                         h5 危険地帯アラート
-                                    .card.col.s4.yellow.lighten-5
+                                    .card.col.s4
                                         h5 Google Apps Script
+    
                                     
                                 
 
