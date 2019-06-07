@@ -62,40 +62,44 @@ html(lang="en")
                                 h3.white-text(style="padding:10px") Skill
                             .card-content
                                 .row
-                                    .card.col.m4.s6.sticky-action
+                                    .card.col.m4.s6
                                         .card-image(style="border-bottom:groove;")
-                                            img(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
+                                            img.activator(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 Python 
                                                 i.material-icons.right message
+                                        .card-action
                                             span.grey-text.text-darken-4 使用歴：#{year}年
-                                            hr
+                                            
                                         .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 Python
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
-                                    .card.col.s6.m4.sticky-action
+                                    .card.col.s6.m4
                                         .card-image(style="border-bottom:groove;")
-                                            img(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
+                                            img.activator(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 JS
                                                 i.material-icons.right message
-                                            span.grey-text.text-darken-4 使用歴：#{year}年
-                                            hr
+                
+                                            .card-action
+                                                span.grey-text.text-darken-4 使用歴：#{year}年
+                                            
                                         .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 JavaScript
-                                        
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
                                     .card.col.m4.s6.sticky-action
                                         .card-image(style="border-bottom:groove;")
-                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                            img.activator(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 C/C++
                                                 i.material-icons.right message
-                                            hr
+                                            
+                                            .card-action
+                                                span.grey-text.text-darken-4 使用歴：#{year}年
                                         .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 C/C++
                                                 i(class="material-icons right") close
@@ -112,12 +116,14 @@ html(lang="en")
                                 .row
                                     .card.col.m4.s6.sticky-action
                                         .card-image(style="border-bottom:groove;")
-                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                            img.activator(src="https://obs.line-scdn.net/0hSKCEp6DJDGR-PCGtgDFzM19hBwZNXhJvXFpEAlo0WlRTD0pcF1pLVlo0VgZUDR87Rg4UVTU8WgZbCEo6RB9CCw9vUgRWXA/f256x256" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 飲み会提案ボット
                                                 i.material-icons.right message
                                             hr
-                                        .card-reveal(style="border-right:ridge")
+                                        .card-action
+                                            a(href='https://www.line-community.me/bot_detail?botid=5baf522e851f74632343b187') 詳しくはこちら
+                                        .card-reveal.activator(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 飲み会提案ボット
                                                 i(class="material-icons right") close
                                             hr
@@ -125,13 +131,13 @@ html(lang="en")
 
                                     .card.col.m4.s6.sticky-action
                                         .card-image(style="border-bottom:groove;height:100%;")
-                                            img(src="img/dangeralert.png" style="width:100%;")
+                                            img.activator(src="img/dangeralert.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 危険地帯アラート
                                                 i.material-icons.right message
                                             hr
                                         .card-action
-                                            a(href="https://dangeralert.herokuapp.com/") 確認はこちら
+                                            a(href="https://dangeralert.herokuapp.com/") ホームページ
                                         .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 危険地帯アラート
                                                 i(class="material-icons right") close
@@ -139,7 +145,7 @@ html(lang="en")
                                             p.detail 
                                     .card.col.s6.m4.sticky-action
                                         .card-image(style="border-bottom:groove;")
-                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                            img.activator(src="https://upload.wikimedia.org/wikipedia/en/f/f2/Google_Apps_Script.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 GAS
                                                 i.material-icons.right message
