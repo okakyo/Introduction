@@ -30,8 +30,8 @@ html(lang="en")
         main.container
             .card
                 .row#about
-                    .col.s1
-                    .col.s6
+                    .col.m1
+                    .col.s12.m6
                         .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") About
@@ -49,7 +49,7 @@ html(lang="en")
                                             p Qiita:
                                                 a(href="https://qiita.com/0622okakyo") @0622okakyo
                                             p Mail:0622okakyo@gmail.com
-                    .col.s4
+                    .col.m4.s12
                         .card.grey.lighten-5
                             .center.z-depth-1.light-blue.accent-2
                                 h3.white-text(style="padding:10px") Career
@@ -62,19 +62,22 @@ html(lang="en")
                                 h3.white-text(style="padding:10px") Skill
                             .card-content
                                 .row
-                                    .card.col.s4
+                                    .card.col.m4.s6
                                         .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/python.png" style="width:100%;")
                                         .card-content
                                             span.card-title.activator.grey-text.text-darken-4 Python 
                                                 i.material-icons.right message
+                                            
+                                            span.grey-text.text-darken-4 使用歴：#{year}年
+                                                
                                             hr
                                         .card-reveal(style="border-right:ridge")
                                             span.card-title.grey-text.text-darken-4 Python
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail 機械学習や画像処理, データのスクレイピングやランディング, Django, Flask を利用したWebアプリ開発やLINE Botの開発, MicroPython を利用したマイコン開発を行った。
-                                    .card.col.s4
+                                    .card.col.s6.m4
                                         .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/javascript.png" style="width:100%;")
                                         .card-content
@@ -87,7 +90,7 @@ html(lang="en")
                                                 i(class="material-icons right") close
                                             hr
                                             p.detail Node.js Express を利用したサーバーサイドの実装やスクレイピング,Slack や LINE ボット開発を行った。また、Vue.js, React.js を利用したフロントエンドの実装を行ったり, Angular, Ionic でのフロントエンド開発, GAS を利用したアプリ開発をおこなった。 
-                                    .card.col.s4
+                                    .card.col.m4.s6
                                         .card-image(style="border-bottom:groove;")
                                             img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
                                         .card-content
@@ -98,7 +101,7 @@ html(lang="en")
                                             span.card-title.grey-text.text-darken-4 C/C++
                                                 i(class="material-icons right") close
                                             hr
-                                            p.detail                                             
+                                            p.detail  C、C++はArduino,ESP32 といったマイコン開発時や競技プログラミングに使用。                                   
                                     
                 .row#works
                     .col.m1
@@ -108,13 +111,44 @@ html(lang="en")
                                 h3.white-text(style="padding:10px") Works
                             .card-content
                                 .row
-                                    .card.col.s4
-                                        h5 飲み会提案ボット
-                                    .card.col.s4
-                                        h5 危険地帯アラート
-                                    .card.col.s4
-                                        h5 Google Apps Script
-    
+                                    .card.col.m4.s6
+                                        .card-image(style="border-bottom:groove;")
+                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                        .card-content
+                                            span.card-title.activator.grey-text.text-darken-4 飲み会提案ボット
+                                                i.material-icons.right message
+                                            hr
+                                        .card-reveal(style="border-right:ridge")
+                                            span.card-title.grey-text.text-darken-4 飲み会提案ボット
+                                                i(class="material-icons right") close
+                                            hr
+                                            p.detail
+
+                                    .card.col.m4.s6
+                                        .card-image(style="border-bottom:groove;height:100%;")
+                                            img(src="img/dangeralert.png" style="width:100%;")
+                                        .card-content
+                                            span.card-title.activator.grey-text.text-darken-4 危険地帯アラート
+                                                i.material-icons.right message
+                                            hr
+                                        .card-reveal(style="border-right:ridge")
+                                            span.card-title.grey-text.text-darken-4 危険地帯アラート
+                                                i(class="material-icons right") close
+                                            hr
+                                            p.detail 
+                                    .card.col.s6.m4
+                                        .card-image(style="border-bottom:groove;")
+                                            img(src="https://img.icons8.com/color/500/000000/c-plus-plus-logo.png" style="width:100%;")
+                                        .card-content
+                                            span.card-title.activator.grey-text.text-darken-4 GAS
+                                                i.material-icons.right message
+                                            hr
+                                        .card-reveal(style="border-right:ridge")
+                                            span.card-title.grey-text.text-darken-4 GAS
+                                                i(class="material-icons right") close
+                                            hr
+                                            p.detail 現在、GASを利用したアプリを開発中。
+    script(src="tabs.js")
                                     
                                 
 
