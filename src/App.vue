@@ -1,9 +1,8 @@
 <template lang="pug">
     v-app
         toolbar-header
-        v-content(style="background-color:#f6f6f6")
-            v-container
-                router-view
+        v-content
+            router-view
 
 </template>
 

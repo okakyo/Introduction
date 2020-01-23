@@ -1,11 +1,18 @@
 <template lang="pug">
-    card-grid
+    v-container
+
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import cardGrid from "@/components/organisms/grid/cardGrid.vue";
+import signInCard from "@/components/template/card/signinCard.vue";
 export default Vue.extend({
-  name: "Signin.vue"
+  name: "Signin",
+  components: {
+    cardGrid,
+    signInCard
+  }
 });
 </script>
 

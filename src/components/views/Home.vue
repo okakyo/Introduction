@@ -1,13 +1,19 @@
 <template lang="pug">
-    v-container
-        p Hello World
+    base-grid
+        template(v-slot:left-grid-content)
+            p HEllo World
+        template(v-slot:right-grid-content)
+            h3 こん
 </template>
 
-<script>
+<script lang="ts">
 // @ is an alias to /src
-
-export default {
+import Vue from "vue";
+import baseGrid from "@/components/organisms/grid/baseGrid.vue";
+export default Vue.extend({
   name: "home",
-  components: {}
-};
+  components: {
+    baseGrid
+  }
+});
 </script>

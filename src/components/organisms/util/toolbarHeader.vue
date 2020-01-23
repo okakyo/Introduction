@@ -1,6 +1,5 @@
 <template lang="pug">
     v-app-bar(app dark color="primary")
-        v-app-bar-nav-icon(style="border:none;")
         v-toolbar-title(color="primary")
             v-btn(color="primary" to="/") Top
         v-spacer
