@@ -28,7 +28,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: 'Build Client Code(react-scripts によるビルド実行)'
+          name: 'Build Client Code(vue-scripts によるビルド実行)'
           command: npm run build
 
       - attach_workspace:
