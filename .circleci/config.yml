@@ -5,4 +5,4 @@ deployment:
   deploy:
     branch: master
     commands:
-      - firebase deploy --project "$FIREBASE_PJ" --token "$FIREBASE_TOKEN"
+      - firebase deploy  --token "$FIREBASE_TOKEN"
