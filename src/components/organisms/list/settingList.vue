@@ -24,11 +24,6 @@ export default Vue.extend({
           icon: "",
           title: "テーマカラー",
           action: ""
-        },
-        {
-          icon: "",
-          title: "",
-          action: ""
         }
       ]
     };

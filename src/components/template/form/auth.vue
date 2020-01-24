@@ -1,11 +1,11 @@
 <template lang="pug">
-    v-form
+    v-form.pa-8
         v-text-field(label="email" type="email" required)
         v-text-field(label="password" type="password"  required)
         v-btn(outliuned block color="success" depressed) ログイン
         v-divider.my-5
-        v-btn(outlined block) GitHub
-        v-btn(outlined block) Google
+        v-btn(outlined block).my-5 GitHub
+        v-btn(outlined block).my-5 Google
     
 </template>
 
