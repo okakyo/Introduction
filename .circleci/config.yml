@@ -43,9 +43,10 @@ jobs:
         deploy-works:
                 jobs:
                         - build
-                        filters:
-                                branches:
-                                        only:
-                                                - master
+                        - deploy-production:
+                                filters:
+                                        branches:
+                                                only:
+                                                        - master
 
         
