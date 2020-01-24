@@ -38,14 +38,14 @@ jobs:
           name: 'Deploy to Hosting'
           command: node_modules/.bin/firebase deploy --only hosting --project "$FIREBASE_PJ" --token "$FIREBASE_TOKEN"
 
-  workflows:
-        version: 2
-        deploy-works:
-                jobs:
-                        - build
-                                filters:
-                                        branches:
-                                                only:
-                                                        - master
+    workflows:
+      version: 2
+      deploy-works:
+        jobs:
+          - build:
+            filters:
+              branches:
+                only:
+                  - master
 
         
