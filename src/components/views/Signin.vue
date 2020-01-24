@@ -1,6 +1,8 @@
 <template lang="pug">
-    v-container
-
+    v-layout.justify-center
+        v-col(lg="4" md="6" sm="8" xs="10")
+            v-card
+                p こんにちは
 </template>
 
 <script lang="ts">
