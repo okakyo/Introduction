@@ -1,14 +1,15 @@
 <template lang="pug">
     v-navigation-drawer(v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app)
-        v-list-item
-            v-list-item-avatar
-            v-list-item-content
-        v-divider
-        v-list(dense nav)
+        v-list(dense)
+            v-list-item
+                v-list-item-avatar
+                v-list-item-content
+            v-divider
             v-list-item(v-for="nav in navList" :key="nav.title" :to="nav.url" link)
                 v-list-item-avatar
                     v-icon {{nav.icon}}
-                v-list-item-content {{nav.title}}
+                v-list-item-content
+                    v-list-item-title {{nav.title}}
 
 </template>
 

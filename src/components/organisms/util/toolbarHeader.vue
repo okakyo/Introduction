@@ -1,12 +1,12 @@
 <template lang="pug">
     .toolbar-header
         v-app-bar(app dark color="primary" :clipped-left="$vuetify.breakpoint.lgAndUp")
-            v-app-bar-nav-icon(v-model="drawer"  @click.stop="drawer = !drawer")
+            v-app-bar-nav-icon(v-model="drawer"  @click.stop="drawer = !drawer" depressed)
             v-toolbar-title(color="primary")
-                v-btn(color="primary" to="/") Top
+                v-btn(color="primary" to="/" depressed ) Top
             v-spacer
             v-toolbar-title
-                v-btn(color="primary" to="/about") Sign in
+                v-btn(color="primary" to="/signin" depressed ) Sign in
 
 
     

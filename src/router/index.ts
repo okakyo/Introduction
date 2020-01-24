@@ -3,6 +3,9 @@ import VueRouter from "vue-router";
 import Home from "@/components/views/Home.vue";
 import About from "@/components/views/About.vue";
 import SignIn from "@/components/views/Signin.vue";
+import Setting from "@/components/views/account/Setting.vue";
+import firebase from "firebase";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +23,11 @@ const routes = [
     path: "/signin",
     name: "signin",
     component: SignIn
+  },
+  {
+    path: "/setting",
+    name: "setting",
+    component: Setting
   }
 ];
 
@@ -28,5 +36,24 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
+
+// 認証チェックを実装するための実装
+/*
+router.beforeEach((to, from, next) => {
+  let requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  let currentUser = firebase.auth().currentUser;
+  if (requiresAuth) {
+    if (!currentUser) {
+      next({
+        path: '/signin',
+        query: { redirect: to.fullPath }
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+})*/
 
 export default router;

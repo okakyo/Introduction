@@ -1,15 +1,12 @@
 <template lang="pug">
-    .mt-5
-        v-layout(justify-center)
-            v-flex(xs12 md8 lg6)
-                slot(name="grid-content")
 
+    
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "cardGrid"
+  name: "Files"
 });
 </script>
 

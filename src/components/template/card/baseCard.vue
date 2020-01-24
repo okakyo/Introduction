@@ -1,17 +1,21 @@
 <template lang="pug">
     v-card
-        v-toolbar
+        v-toolbar(flat)
             v-spacer
-            v-toolbar-title ログイン画面
+            v-toolbar-title {{cardTitle}}
             v-spacer
+        v-divider
         v-card-text
-            v-card-title こんにちは
+            slot(name="card-content")
+
+
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  name: "signinCard.vue"
+  name: "signinCard",
+  props: ["cardTitle"]
 });
 </script>
 
