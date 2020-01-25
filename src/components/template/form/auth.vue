@@ -1,11 +1,13 @@
 <template lang="pug">
-    v-form.pa-8
-        v-text-field(label="email" type="email" required)
-        v-text-field(label="password" type="password"  required)
-        v-btn(outliuned block color="success" depressed) ログイン
-        v-divider.my-5
-        v-btn(outlined block).my-5 GitHub
-        v-btn(outlined block).my-5 Google
+  .pa-8
+    v-form
+      v-text-field(label="email" type="email" required)
+      v-text-field(label="password" type="password"  required)
+      v-btn(outliuned block color="success" depressed type="submit") ログイン
+    v-form
+      v-btn(outlined block rounded @click="").my-5 GitHub
+    v-form
+      v-btn(outlined block rounded @click="").my-5 Google
     
 </template>
 

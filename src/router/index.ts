@@ -4,6 +4,7 @@ import Home from "@/components/views/Home.vue";
 import About from "@/components/views/About.vue";
 import SignIn from "@/components/views/Signin.vue";
 import Setting from "@/components/views/account/Setting.vue";
+import Account from "@/components/views/account/Accounts.vue";
 import firebase from "firebase";
 
 Vue.use(VueRouter);
@@ -28,6 +29,11 @@ const routes = [
     path: "/setting",
     name: "setting",
     component: Setting
+  },
+  {
+    path: "/account",
+    name: "accounts",
+    component: Account
   }
 ];
 

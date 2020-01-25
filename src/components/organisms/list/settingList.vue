@@ -1,10 +1,11 @@
 <template lang="pug">
 
     v-list( dense )
-        v-list-item(v-for="item in listItems" :key="item.title")
-            v-list-item-avatar
+      .list-items(v-for="item in listItems" :key="item.title")
+        v-list-item
             v-list-item-content {{item.title}}
-            v-list-tile-action
+            v-switch
+        v-divider
 
 </template>
 

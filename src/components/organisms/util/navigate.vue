@@ -1,15 +1,16 @@
 <template lang="pug">
     v-navigation-drawer(v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app)
-        v-list(dense)
-            v-list-item
-                v-list-item-avatar
-                v-list-item-content
-            v-divider
-            v-list-item(v-for="nav in navList" :key="nav.title" :to="nav.url" link)
-                v-list-item-avatar
-                    v-icon {{nav.icon}}
-                v-list-item-content
-                    v-list-item-title {{nav.title}}
+      v-list-item
+        v-list-item-content
+          v-list-item-title dorarora
+          v-list-item-subtitle @fagat
+      v-divider
+      v-list(dense nav)
+        v-list-item(v-for="nav in navList" :key="nav.title" :to="nav.url")
+            v-list-item-avatar
+                v-icon {{nav.icon}}
+            v-list-item-content
+                v-list-item-title {{nav.title}}
 
 </template>
 
@@ -17,7 +18,9 @@
 import Vue from "vue";
 export default Vue.extend({
   name: "navigation",
-  props: ["drawer"],
+  props: {
+    drawer: Boolean
+  },
   data() {
     return {
       navList: [

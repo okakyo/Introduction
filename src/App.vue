@@ -1,7 +1,7 @@
 <template lang="pug">
     v-app#inspire(app)
-        nav-list
-        toolbar-header
+        nav-list(:drawer="navigateDrawer")
+        toolbar-header(@drawerChange="changeDrawer()")
         v-content
             v-container
                 router-view
@@ -20,8 +20,15 @@ export default Vue.extend({
     navList
   },
 
-  data: () => ({
-    //
-  })
+  data() {
+    return {
+      navigateDrawer: false
+    };
+  },
+  methods: {
+    changeDrawer() {
+      this.navigateDrawer = !this.navigateDrawer;
+    }
+  }
 });
 </script>

@@ -1,9 +1,6 @@
 <template lang="pug">
-    base-grid
-        template(v-slot:left-grid-content)
-            p HEllo World
-        template(v-slot:right-grid-content)
-            h3 こん
+  base-grid
+    template(v-slot:grid-content)
 </template>
 
 <script lang="ts">
